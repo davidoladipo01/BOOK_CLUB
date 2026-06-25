@@ -93,7 +93,7 @@
   .ar-input-wrap { position: relative; }
  
   .ar-input {
-    width: 100%;
+    width: 90%;
     padding: 11px 14px;
     padding-right: 42px;
     border: 1.5px solid rgba(90,62,43,0.2);

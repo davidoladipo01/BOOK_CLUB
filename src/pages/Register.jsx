@@ -103,7 +103,7 @@ const Register = () => {
           </small>
 
           <button type="submit" className="create-btn">
-            <Link to={"/Dashboard"}>Create Account</Link>
+            <Link style={{textDecoration: "none", color: "inherit"}} to={"/Dashboard"}>Create Account</Link>
           </button>
         </form>
 
