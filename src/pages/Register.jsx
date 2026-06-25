@@ -103,7 +103,7 @@ const Register = () => {
 
           <button type="submit" className="create-btn">
             <Link to={"/Dashboard"}>Create Account</Link>
-           </button>
+          </button>
         </form>
 
         <div className="divider">
