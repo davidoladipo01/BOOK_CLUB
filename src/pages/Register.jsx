@@ -21,7 +21,7 @@ const Register = () => {
         .min(3, 'Full Name must be at least 3 characters'),
 
       email: yup.string().required('Email is required').email('Invalid email format'),
-      
+
       password: yup
         .string()
         .required('Password is required')
@@ -38,7 +38,7 @@ const Register = () => {
 
   console.log(formik.values)
 
-return (
+  return (
     <div className="register-page">
       <div className="register-card">
         <div className="logo">AfriReadco</div>
@@ -103,7 +103,7 @@ return (
 
           <button type="submit" className="create-btn">
             <Link to={"/Dashboard"}>Create Account</Link>
-          </button>
+           </button>
         </form>
 
         <div className="divider">
