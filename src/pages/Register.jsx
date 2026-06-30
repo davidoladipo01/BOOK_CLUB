@@ -2,6 +2,7 @@ import React from 'react'
 import { useFormik } from 'formik'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup'
+import Logo from '../components/Logo'
 
 const Register = () => {
   const formik = useFormik({
@@ -41,7 +42,8 @@ const Register = () => {
   return (
     <div className="register-page">
       <div className="register-card">
-        <div className="logo">AfriReadco</div>
+        <div><Logo /></div>
+        
 
         <h1>Join AfriReadco</h1>
         <p className="subtitle">

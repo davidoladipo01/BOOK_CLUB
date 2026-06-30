@@ -62,7 +62,7 @@ const Login = () => {
           <label className="ar-label" htmlFor="email">Email Address</label>
           <div className="ar-input-wrap">
             <input className="ar-input" type="email" name="email" placeholder="you@example.com" autoComplete="email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur}/>
-            <small className="text-danger">{formik.touched.email && formik.errors.email} </small> <br />
+            <small className="text-danger">{formik.touched.email && formik.errors.email ? formik.errors.email : ""} </small> <br />
             <span className="ar-input-icon" aria-hidden="true"><i className="ti ti-mail"></i></span>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Login = () => {
           <label className="ar-label" htmlFor="password">Password</label>
           <div className="ar-input-wrap">
             <input className="ar-input" type="password" name="password" placeholder="Your password" autoComplete="current-password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur}/>
-            <small className="text-danger">{formik.touched.password && formik.errors.password} </small> <br />
+            <small className="text-danger">{formik.touched.password && formik.errors.password ? formik.errors.password : ""} </small> <br />
           </div>
         </div>
 
@@ -85,7 +85,7 @@ const Login = () => {
         {/* Divider */}
         <div className="ar-divider">
           <div className="ar-divider-line"></div>
-          <span className="ar-divider-text">or continue with</span>
+          <span className="ar-divider-text">OR</span>
           <div className="ar-divider-line"></div>
         </div>
  
