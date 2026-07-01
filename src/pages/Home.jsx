@@ -7,7 +7,7 @@ function Home() {
     <div>
       <Logo />
       <section>
-        <Features/>
+
       </section>
       THIS IS MY HOMEPAGE
     </div>
