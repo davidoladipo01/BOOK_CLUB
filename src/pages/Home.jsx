@@ -1,15 +1,28 @@
 import React from 'react'
 import Logo from '../components/Logo'
 import Features from '../components/Features'
+import Button from '../components/Button'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
     <div>
-      <Logo />
       <section>
+        <div className="home-container">
+        <div className="hero-overlay"></div>
+          <div className="hero-content">
+            <span className='hero-content1'>AfriReadCo</span>
+            <div className='hero-content2'>Africa's Home for Readers</div>
+            <div className='hero-content3'>Because every great African story deserves a reader who truly connects with it.</div>
+            <Button to="/register" className='mt-6 inline-block rounded-xl shadow-md bg-black button focus:outline-none focus:ring-2' />
+            <a className='underline mt-6  py-3 px-5 text-sm' href=""><Link to={"/login"}>Sign In</Link></a>
+          </div>
 
+          <div>
+
+          </div>
+        </div>
       </section>
-      THIS IS MY HOMEPAGE
     </div>
   )
 }
