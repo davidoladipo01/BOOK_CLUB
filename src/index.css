@@ -664,3 +664,77 @@ input:focus {
   background: none;
   color:rgb(252, 241, 238);
 }
+
+/* ====SLIDER==== */
+.hero{
+    width:100%;
+    height:100vh;
+    background:#0E4A37;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:35px;
+}
+
+/* ---------- Slider ---------- */
+
+.slider{
+    width:100%;
+    overflow:hidden;
+}
+
+.slide-track{
+    display:flex;
+    width:max-content;
+    gap:18px;
+}
+
+.slider-left .slide-track{
+    animation: scrollLeft 35s linear infinite;
+}
+
+.slider-right .slide-track{
+    animation: scrollRight 40s linear infinite;
+}
+
+/* ---------- Placeholder ---------- */
+
+.book{
+    width:180px;
+    height:260px;
+    background:#d9d9d9;
+    border-radius:14px;
+    flex-shrink:0;
+}
+
+.book.large{
+    width:260px;
+    height:300px;
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes scrollLeft{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+@keyframes scrollRight{
+
+    from{
+        transform:translateX(-50%);
+    }
+
+    to{
+        transform:translateX(0);
+    }
+
+}
