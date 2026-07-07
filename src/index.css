@@ -640,101 +640,126 @@ input:focus {
   vertical-align: baseline;
 }
 
-.hero-content3{
+.hero-content3 {
   font-weight: 500;
-    font-size: 1.875rem;
-    line-height: 33px;
-    max-width: 18ch;
+  font-size: 1.875rem;
+  line-height: 33px;
+  max-width: 18ch;
 }
 
-.button{
-   font-family: poppins, sans-serif;
-   font-weight: 600;
-   font-size: 16px;
-   padding: 12px 32px;
-   
+.button {
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 32px;
 }
 
-.button:hover{
-  background-color:#FFFFFF !important;
+.button:hover {
+  background-color: #ffffff !important;
   color: black !important;
 }
 
-.underline{
+.underline {
   background: none;
-  color:rgb(252, 241, 238);
+  color: rgb(252, 241, 238);
 }
 
 /* ====SLIDER==== */
-.hero{
-    width:100%;
-    height:100vh;
-    background:#0E4A37;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap:35px;
+.slider-section {
+  background:rgba(189, 71, 38, 0.76);
+  overflow: hidden;
+  padding: 50px 0;
 }
 
-/* ---------- Slider ---------- */
-
-.slider{
-    width:100%;
-    overflow:hidden;
+.slider {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  margin-bottom: 20px;
 }
 
-.slide-track{
-    display:flex;
-    width:max-content;
-    gap:18px;
+.slow {
+  animation-duration: 45s;
 }
 
-.slider-left .slide-track{
-    animation: scrollLeft 35s linear infinite;
+/* BOOK */
+
+.book {
+  flex-shrink: 0;
 }
 
-.slider-right .slide-track{
-    animation: scrollRight 40s linear infinite;
+.book img {
+  width: 170px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-/* ---------- Placeholder ---------- */
+/* PERSON */
 
-.book{
-    width:180px;
-    height:260px;
-    background:#d9d9d9;
-    border-radius:14px;
-    flex-shrink:0;
+.person {
+  flex-shrink: 0;
 }
 
-.book.large{
-    width:260px;
-    height:300px;
+.person img {
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
 }
 
-/* ---------- Animations ---------- */
+/* Animations */
 
-@keyframes scrollLeft{
-
-    from{
-        transform:translateX(0);
-    }
-
-    to{
-        transform:translateX(-50%);
-    }
-
+.left {
+  animation: moveLeft 100s linear infinite;
 }
 
-@keyframes scrollRight{
+.right {
+  animation: moveRight 55s linear infinite;
+}
 
-    from{
-        transform:translateX(-50%);
-    }
+.slider:hover {
+  animation-play-state: paused;
+}
 
-    to{
-        transform:translateX(0);
-    }
+/* LEFT */
 
+@keyframes moveLeft {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* RIGHT */
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .book img {
+    width: 120px;
+    height: 180px;
+  }
+
+  .person img {
+    width: 150px;
+    height: 210px;
+  }
+
+  .slider {
+    gap: 12px;
+  }
 }
