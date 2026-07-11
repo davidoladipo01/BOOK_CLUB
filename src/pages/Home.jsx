@@ -7,6 +7,7 @@ import Pg1 from '../components/Pg1'
 import Infinitslider from './Infinitslider'
 import Pg_1 from '../components/Pg_1'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
 
       <Infinitslider />
       <Features />
+      <Footer />
     </>
   )
 }

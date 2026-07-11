@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useFormik } from "formik"
 import * as yup from "yup"
+import Logo from '../components/Logo'
 
 
 const Login = () => {
@@ -42,14 +43,13 @@ const Login = () => {
       </svg>
  
       {/* Brand */}
-      <div className="ar-auth-brand">
-        <div className="ar-auth-brand-mark">
-          <svg viewBox="0 0 16 16" fill="none">
-            <rect x="1" y="2" width="9" height="12" rx="1" fill="white" opacity="0.9"/>
-            <rect x="4" y="2" width="9" height="12" rx="1" fill="white" opacity="0.55"/>
-          </svg>
+      <div className="/ar-auth-brand">
+        <div className="/ar-auth-brand-mark">
+<Logo bookColor="#5A3E2B"
+          textColor="#2B2B2B"
+          accentColor="#C65D3B" />
         </div>
-        <span className="ar-auth-brand-name">Afri<span>Read</span>Co</span>
+        {/* <span className="ar-auth-brand-name">Afri<span>Read</span>Co</span> */}
       </div>
  
       <h2 className="ar-auth-title">Welcome Back</h2>

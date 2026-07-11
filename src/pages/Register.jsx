@@ -42,8 +42,10 @@ const Register = () => {
   return (
     <div className="register-page">
       <div className="register-card">
-        <div><Logo /></div>
-        
+        <div><Logo bookColor="#5A3E2B"
+          textColor="#2B2B2B"
+          accentColor="#C65D3B" /></div>
+
 
         <h1>Join AfriReadco</h1>
         <p className="subtitle">
@@ -98,14 +100,14 @@ const Register = () => {
             value={formik.values.confirmPassword}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            
+
           />
           <small className="text-danger">
             {formik.touched.confirmPassword && formik.errors.confirmPassword ? formik.errors.confirmPassword : ''}
           </small>
 
           <button type="submit" className="create-btn">
-            <Link style={{textDecoration: "none", color: "inherit"}} to={"/Dashboard"}>Create Account</Link>
+            <Link style={{ textDecoration: "none", color: "inherit" }} to={"/Dashboard"}>Create Account</Link>
           </button>
         </form>
 
