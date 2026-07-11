@@ -5,13 +5,20 @@ import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 import Pg1 from '../components/Pg1'
 import Infinitslider from './Infinitslider'
+import Pg_1 from '../components/Pg_1'
+import Navbar from '../components/Navbar'
 
 function Home() {
   return (
-    <div>
+    <>
+      <Navbar />
+      {/* <Logo /> */}
+      <Pg_1 />
       <Pg1 />
+
       <Infinitslider />
-    </div>
+      <Features />
+    </>
   )
 }
 
