@@ -1,9 +1,9 @@
-import person1 from '../assets/person1.webp'
-import person2 from '../assets/person2.webp'
-import person3 from '../assets/person3.webp'
-import book1 from '../assets/bk3.jpeg'
-import book2 from '../assets/bk12.jpeg'
-import book3 from '../assets/bk20.jpeg'
+import person1 from '../assets/ama.jpg'
+import person2 from '../assets/couple.jpg'
+import person3 from '../assets/emeka.jpg'
+import book1 from '../assets/play.webp'
+import book2 from '../assets/bk17.jpeg'
+import book3 from '../assets/mary.jpeg'
 
 const Communites = () => {
   const communities = [
@@ -15,27 +15,27 @@ const Communites = () => {
       moderator: "Amara moderates",
       description:
         "Modern African fiction, lively monthly reads and warm conversations.",
-      members: "1.2k",
+      members: "1.2k (Projected)",
     },
     {
       id: 2,
       image: person2,
       bookImage: book2,
-      title: "Virtual Classics",
+      title: "Zaire and Momo's Club 🩵",
       moderator: "Kemi moderates",
       description:
         "A shared home for timeless African classics and thoughtful readers.",
-      members: "3.5k",
+      members: "3.5k (Projected)",
     },
     {
       id: 3,
       image: person3,
       bookImage: book3,
-      title: "Nairobi Writers Hub",
+      title: "Essien Book Hub",
       moderator: "Nia moderates",
       description:
         "Poetry, creative writing prompts and feedback from fellow storytellers.",
-      members: "850",
+      members: "850 (Projected)",
     },
   ];
   return (

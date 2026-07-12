@@ -9,6 +9,7 @@ import Pg_1 from '../components/Pg_1'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Communites from '../components/Communites'
+import ReadingDashboard from '../components/ReadingDashboard'
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
       <Infinitslider />
       <Features />
       <Communites />
+      <ReadingDashboard />
       <Footer />
     </>
   )
