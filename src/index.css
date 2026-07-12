@@ -1462,3 +1462,468 @@ input:focus {
     gap: 20px;
   }
 }
+
+/* ============================
+   Reading Dashboard Section
+============================ */
+
+.dashboard-section {
+    padding: 7rem 0;
+    background: linear-gradient(180deg, #F8F4EC 0%, #fff 100%);
+}
+
+.dashboard-container {
+    width: min(1200px, 92%);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 5rem;
+    align-items: center;
+}
+
+
+/* ============================
+   Left Content
+============================ */
+
+.dashboard-tag {
+    display: inline-block;
+    background: rgba(198, 93, 59, .12);
+    color: #C65D3B;
+    padding: .55rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    font-size: .82rem;
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-content h2 {
+    font-size: clamp(2.2rem, 4vw, 3.3rem);
+    color: #2B2B2B;
+    line-height: 1.15;
+    margin-bottom: 1.3rem;
+}
+
+.dashboard-content>p {
+    color: #666;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    margin-bottom: 3rem;
+}
+
+
+/* ============================
+   Features
+============================ */
+
+.dashboard-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.feature span {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(198, 93, 59, .1);
+
+    color: #C65D3B;
+}
+
+.feature h4 {
+    color: #2B2B2B;
+    margin-bottom: .3rem;
+}
+
+.feature p {
+    color: #777;
+    line-height: 1.6;
+}
+
+
+/* ============================
+   Dashboard Card
+============================ */
+
+.dashboard-card {
+
+    position: relative;
+
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 2.3rem;
+
+    box-shadow:
+        0 35px 70px rgba(0, 0, 0, .08);
+
+    border: 1px solid rgba(0,0,0,.06);
+
+    transition: .35s;
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.goal-badge{
+
+    position:absolute;
+
+    top:-15px;
+    right:25px;
+
+    background:#D9A441;
+    color:white;
+
+    padding:.7rem 1.1rem;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    box-shadow:0 15px 30px rgba(217,164,65,.25);
+}
+
+.dashboard-card h3{
+
+    margin-bottom:2rem;
+
+    color:#2B2B2B;
+}
+
+
+/* ============================
+   Progress
+============================ */
+
+.progress-card{
+
+    margin-bottom:2rem;
+}
+
+.progress-header{
+
+    display:flex;
+    justify-content:space-between;
+
+    margin-bottom:.8rem;
+
+    font-weight:600;
+}
+
+.progress-number{
+
+    color:#C65D3B;
+}
+
+.progress-bar{
+
+    height:12px;
+
+    background:#EFEAE3;
+
+    border-radius:50px;
+
+    overflow:hidden;
+}
+
+.progress-fill{
+
+    width:60%;
+
+    height:100%;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #C65D3B,
+        #D9A441
+    );
+
+    animation:progress 1.6s ease;
+}
+
+@keyframes progress{
+
+    from{
+
+        width:0;
+    }
+
+    to{
+
+        width:60%;
+    }
+
+}
+
+
+/* ============================
+   Stats
+============================ */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:1rem;
+
+    margin-bottom:2rem;
+}
+
+.stat-box{
+
+    padding:1.4rem;
+
+    border-radius:18px;
+
+    background:#FCFAF7;
+
+    border:1px solid #EEE;
+
+    transition:.3s;
+}
+
+.stat-box:hover{
+
+    background:white;
+
+    transform:translateY(-5px);
+}
+
+.stat-box span{
+
+    color:#C65D3B;
+
+    margin-bottom:1rem;
+
+    font-size:1.8rem;
+}
+
+.stat-box h4{
+
+    font-size:1.8rem;
+
+    color:#2B2B2B;
+}
+
+.stat-box p{
+
+    color:#777;
+
+    margin-top:.3rem;
+}
+
+
+/* ============================
+   Current Book
+============================ */
+
+.recent-book{
+
+    display:flex;
+
+    gap:1.2rem;
+
+    align-items:center;
+
+    padding-top:2rem;
+
+    border-top:1px solid #EEE;
+}
+
+.book-cover{
+
+    width:70px;
+    height:100px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #C65D3B,
+        #5A3E2B
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    flex-shrink:0;
+}
+
+.book-cover span{
+
+    font-size:2rem;
+}
+
+.book-details{
+
+    flex:1;
+}
+
+.book-details small{
+
+    color:#999;
+
+    display:block;
+
+    margin-bottom:.4rem;
+}
+
+.book-details h4{
+
+    margin-bottom:.2rem;
+
+    color:#2B2B2B;
+}
+
+.book-details p{
+
+    color:#777;
+
+    margin-bottom:1rem;
+}
+
+.book-details>span{
+
+    color:#C65D3B;
+
+    font-size:.85rem;
+
+    font-weight:600;
+}
+
+.mini-progress{
+
+    width:100%;
+
+    height:8px;
+
+    background:#EEE;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-bottom:.6rem;
+}
+
+.mini-progress div{
+
+    width:85%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #C65D3B,
+        #D9A441
+    );
+
+    border-radius:30px;
+}
+
+
+/* ============================
+   Responsive
+============================ */
+
+@media(max-width:1000px){
+
+.dashboard-container{
+
+grid-template-columns:1fr;
+
+gap:4rem;
+}
+
+.dashboard-card{
+
+max-width:600px;
+
+margin:auto;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.dashboard-section{
+
+padding:5rem 0;
+}
+
+.dashboard-card{
+
+padding:2rem;
+}
+
+.stats-grid{
+
+grid-template-columns:1fr;
+}
+
+.recent-book{
+
+flex-direction:column;
+
+align-items:flex-start;
+}
+
+.book-cover{
+
+width:100%;
+
+height:180px;
+}
+
+}
+
+
+@media(max-width:500px){
+
+.dashboard-content h2{
+
+font-size:2rem;
+}
+
+.dashboard-content>p{
+
+font-size:.96rem;
+}
+
+.goal-badge{
+
+right:15px;
+
+font-size:.8rem;
+}
+
+}
