@@ -31,7 +31,7 @@ const Communites = () => {
       id: 3,
       image: person3,
       bookImage: book3,
-      title: "Essien Book Hub",
+      title: "The Essien Book Hub",
       moderator: "Nia moderates",
       description:
         "Poetry, creative writing prompts and feedback from fellow storytellers.",

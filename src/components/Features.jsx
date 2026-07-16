@@ -36,7 +36,7 @@ function Features() {
     <div>
       <section className="features-section">
         <div className="features-header">
-          <span>BUILT FOR AFRICAN READERS</span>
+          <span className='section-tag'>BUILT FOR AFRICAN READERS</span>
 
           <h2>Everything your reading journey needs</h2>
 

@@ -1,6 +1,6 @@
-import React from 'react'
-
+import book2 from '../assets/bk17.jpeg'
 const ReadingDashboard = () => {
+
   return (
     <section className="dashboard-section">
 
@@ -151,9 +151,7 @@ const ReadingDashboard = () => {
 
             <div className="book-cover">
 
-              <span className="material-symbols-outlined">
-                menu_book
-              </span>
+              <img src={book2} alt="The Fishermen book cover" />
 
             </div>
 
@@ -161,9 +159,9 @@ const ReadingDashboard = () => {
 
               <small>Currently Reading</small>
 
-              <h4>The Fishermen</h4>
+              <h4>Yinka, Where is your husband</h4>
 
-              <p>Chigozie Obioma</p>
+              <p>Lizzy Damilola Blackburn</p>
 
               <div className="mini-progress">
 

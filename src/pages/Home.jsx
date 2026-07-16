@@ -10,6 +10,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Communites from '../components/Communites'
 import ReadingDashboard from '../components/ReadingDashboard'
+import CTA from '../components/CTA'
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <Features />
       <Communites />
       <ReadingDashboard />
+      <CTA />
       <Footer />
     </>
   )
